@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+    
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&display=swap');
+
+        body{
+            background: rgb(247, 172, 172);
+        }
+
+         .about-section{
+            width: 100%;
+            height: 100vh;
+            margin-top: 100px;
+           }
+
+        .red-color{
+            color: red;
+        }
+
+        .row{
+            margin-top: 100px;
+            width: 90%;
+            height: 600px;
+            margin:0 auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            /* align-items: center;   */
+            padding: 20px 120px;
+            background: #fff;
+        }
+
+        .left-half-col{
+            flex-basis: 25%;
+        }
+        .left-half-col .photo {
+            width: 280px;   
+            position: relative;
+            z-index: 9999;
+
+        }  
+        .left-half-col .photo::after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            border: 10px solid rgb(249, 82, 82);
+            top: 18px;
+            right: 18px;
+            position: absolute;  
+            z-index: -1;
+        }
+        
+        .left-half-col .photo img {
+            width: 100%;
+            display: block;
+            z-index: 0000;
+            background: #fff;
+            padding-left: 8px;
+            padding-bottom: 8px;
+
+        }
+
+        .right-half-col{
+            flex-basis: 70%;
+        }
+
+        .right-half-col h1{
+            font-size: 60px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .right-half-col .short-disc{
+            font-size: 24px;
+            margin: 10px 0 20px;
+            letter-spacing: 2px;
+        }
+        .right-half-col p{
+            line-height: 25px;
+        }
+
+        .download-btn{
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 25px;
+            border: 2px solid red;
+            padding: 10px 15px;
+            margin-top: 50px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <!-- About-Section-Start -->
+    <section class="about-section">
+        <div class="row">
+            <div class="left-half-col">
+                <div class="photo"><img src="/profile-1.jpeg" alt="" srcset=""></div>
+            </div>
+            <div class="right-half-col">
+                <h1>About <span class="red-color">Me</span></h1>
+                <div class="short-disc">Front End Developer</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, deserunt et. Nulla sed similique vero nostrum aliquam. Eius voluptas sapiente odio nemo quo exercitationem cupiditate adipisci, quis distinctio corporis vitae similique fugit! Pariatur doloribus dolorum, aspernatur eos minima aperiam similique fugiat id natus iusto ipsum. Iste repellendus magnam deserunt! Esse dolores quas distinctio quis nesciunt placeat voluptate quos aperiam inventore est, voluptatem harum error dicta rerum non dolore illum? Fugit totam in, officia labore iste voluptatem architecto aliquid autem optio est sequi fuga quibusdam aliquam atque corporis. Mollitia magni dolorem, eligendi cupiditate tenetur nobis hic odio cum sunt, distinctio repellat aut nesciunt deserunt accusamus perspiciatis dicta minima ratione rem, ex labore. Debitis, eius omnis quam reiciendis cumque obcaecati. Provident vitae veniam atque recusandae soluta veritatis alias tenetur magni vel accusamus similique fugiat, adipisci quaerat laboriosam sit nostrum quibusdam eos explicabo maiores eaque natus! Earum recusandae molestias repellat totam quasi eum pariatur odit quam ipsam eos cupiditate sed aliquam ab illo, suscipit facilis quisquam libero sunt eaque?</p>
+                <div class="download-btn">Download Resume</div>
+            </div>
+        </div>
+    </section>
+    <!-- About-Section-End -->
+    
+</body>
+</html>
